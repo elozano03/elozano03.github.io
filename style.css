@@ -1,3 +1,77 @@
-.test {
-    height: 2rem;
-}
+body {
+  font-family: "Ubuntu", sans-serif; }
+  body a {
+    color: #17a2b8; }
+
+/*  start navbar */
+.con-tainer {
+  width: 85%;
+  margin: auto; }
+
+.navbar-brand {
+  width: 10%; }
+
+.user {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%; }
+
+.view {
+  font-size: .7rem; }
+
+nav {
+  background-color: #36a0dd;
+  margin-bottom: 2rem; }
+  nav div ul li a {
+    color: #dbdbdb;
+    padding: 0 1rem; }
+    nav div ul li a:hover {
+      color: white; }
+  nav form i {
+    color: #fff; }
+
+/* end navbar */
+/*  start first colum */
+.profil {
+  position: relative; }
+
+.user2 {
+  position: absolute;
+  height: 25%;
+  border-radius: 100%;
+  top: 87%;
+  left: 37.5%; }
+
+.about h5 a {
+  font-size: .7rem;
+  padding-left: .5rem; }
+.about ul li {
+  color: #818181;
+  padding: .1rem 0; }
+  .about ul li i {
+    width: 30px; }
+
+.profil-img h5 a {
+  font-size: .7rem;
+  padding-left: .5rem; }
+.profil-img div div div div {
+  padding: .5rem; }
+
+/* end first colum */
+.com-img {
+  border-radius: 100%;
+  width: 70%; }
+
+.imgimg {
+  width: 80%;
+  border-radius: 50%; }
+
+.main-page div div div div {
+  padding: .5rem; }
+.main-page div div div .i {
+  width: 100%; }
+
+.footer div a {
+  padding-left: 0.5rem; }
+
+/*# sourceMappingURL=style.css.map */

@@ -2,193 +2,323 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Boutique de Mr.yann</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SASS inté</title>
 </head>
 
 <body>
-  <div class="container px-0">
-
     <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="con-tainer d-flex">
+                <a class="navbar-brand" href="#"><img class="img-fluid" src="./images/brand-white.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class=""><i class="fas fa-bars"></i></span>
+                </button>
 
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><i class="fab fa-accessible-icon fa-3x text-info"></i></a>
-        <button class="navbar-toggler text-info" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "></span>
-        </button>
-        <button class="navbar-toggler text-info" type="button" data-toggle="collapse"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fas fa-shopping-basket text-info"></span>
-        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Message</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Docs</a>
+                        </li>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="cataloguepage.html">Catalogue<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="panier.html">Panier<span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <i class="fas fa-bell pr-2"></i><img src="./images/yann.jpg" alt="" class="user">
 
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
-      <div class="bg-info test"></div>
-      <div class="row no-gutters bg-secondary m-0">
-        <div></div>
-        <section class=" d-flex justify-content-center my-3">
-          <div class="col-10 text-center px-0 pb-3">
-            <div class="card">
-              <h1>Bienvenue chez YANNNNEEE Industrie ! </h1>
-              <img src="images/Yann.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga deleniti
-                  repellendus, quis nisi sed velit exercitationem quod? Nam suscipit dicta inventore cupiditate
-                  repudiandae repellendus? Hic ab voluptas optio vitae.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="row no-gutters d-flex justify-content-center my-3">
-          <div class="col-10">
+    <div class="con-tainer">
+        <main>
             <div class="row">
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-100">
-                  <h5 class="card-title">Yann beta version (v0.9)</h5>
-                  <img src="images/Yann.png" class="card-img-top img-thumbnail" alt="...">
-                  <div class="card-body">
+                <div class="col-12 col-lg-3">
                     <div class="row">
-                      <p>Prix : 2.98€</p>
-                      <div class="col-12">
-                        <p class="card-text mb-3"> Une des première version de yann l'homme a tout faire ! avec des
-                          petit
-                          defaut
-                          (Exemple: il rale tout le temps / trop maniaque)(c'est une beta) mais a un prix tres reduit !!
-                        </p>
-                      </div>
-                      <div class="col-12 ">
-                        <a href="#" class="btn btn-outline-info">Ajouter au Panier</a>
-                      </div>
+                        <div class="col-12 col-md-4 col-lg-12 pb-5">
+                            <div class="card">
+                                <div class="profil">
+                                    <img src="https://picsum.photos/500/500" class="card-img-top" alt="...">
+                                    <img class="img-thumbnail user2" src="https://picsum.photos/150/150" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title pt-5">Yann Barthélémy</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <div class="row">
+                                        <div class="col-6 border-right">
+                                            <p>Friends</p><span class="font-weight-bold">12M</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <p>Enemies</p><span class="font-weight-bold">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-12 pb-5">
+                            <div class="card">
+                                <div class="card-body about">
+                                    <h5>About<a href="#">. Edit</a></h5>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0"><i class="far fa-calendar"></i>Went to <a
+                                                href="#">Oh,Canada</a></li>
+                                        <li class="list-group-item border-0"><i class="fas fa-user-friends"></i>Became
+                                            friends
+                                            witdth <a href="#">Obama</a></li>
+                                        <li class="list-group-item border-0"><i class="fab fa-github-alt"></i>Worket at
+                                            <a href="#">Github</a></li>
+                                        <li class="list-group-item border-0"><i class="fas fa-home pr-3"></i>Lives
+                                            in <a href="#">San
+                                                Francisco, CA</a></li>
+                                        <li class="list-group-item border-0"><i class="fas fa-map-marker-alt"></i>From
+                                            <a href="#">Seattle,WA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-12 pb-5">
+                            <div class="card profil-img">
+                                <div class="card-body">
+                                    <h5>Photos <a href="#">. Edit</a></h5>
+                                    <div class="row">
+                                        <div class="col-6 p-0">
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0">
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                            <div>
+                                                <img src="https://picsum.photos/150/150" class="card-img-top" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-100">
-                  <h5 class="card-title">Yann version 1.0</h5>
-                  <img src="images/Yann.png" class="card-img-top img-thumbnail" alt="...">
-                  <div class="card-body">
+                <div class="col-12 col-md-12 col-lg-6">
                     <div class="row">
-                      <p>Prix : 61.99€</p>
-                      <div class="col-12">
-                        <p class="card-text mb-3"> Première version officiel de Yann ! Avec des petit defaut en moins ça
-                          vaut le coup !
-                        </p>
-                      </div>
-                      <div class="col-12 ">
-                        <a href="#" class="btn btn-outline-info">Ajouter au Panier</a>
-                      </div>
+                        <div class="col-12">
+                            <div class="card rounded-0">
+                                <div class="card text-center rounded-top border-0">
+                                    <div class="input-group p-3 ">
+                                        <input type="text" class="form-control" placeholder="Message"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text bg-light " id="basic-addon2"><i
+                                                    class="fas fa-camera"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body border-top main-page">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <img class="imgimg" src="https://picsum.photos/75/75" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="font-weight-bold m-0">Yann leProf</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sunt
+                                                aspernatur perferendis doloremque culpa nihil iusto. Debitis dolor
+                                                consequuntur similique quod dignissimos sequi provident in, accusamus
+                                                ipsam molestiae architecto, voluptatibus tenetur ex magni iure quo
+                                                perspiciatis esse nostrum alias molestias sunt voluptate atque. Alias
+                                                eveniet aliquam voluptate laudantium commodi culpa?</p>
+                                            <div class="row">
+                                                <div class="col-8 p-0">
+                                                    <div>
+                                                        <img class="img-fluid i" src="https://picsum.photos/300/145"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 p-0">
+                                                    <div>
+                                                        <img class="img-fluid i" src="https://picsum.photos/200/200"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 p-0">
+                                                    <div>
+                                                        <img class="img-fluid i" src="https://picsum.photos/200/200"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-8 p-0">
+                                                    <div>
+                                                        <img class="img-fluid i" src="https://picsum.photos/300/145"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-2"><img class="com-img"
+                                                        src="https://picsum.photos/50/50" alt=""></div>
+                                                <div class="col-10"><span class="font-weight-bold">Jacon thornton :
+                                                    </span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Dignissimos aliquid laboriosam quos tenetur iure labore natus
+                                                    modi! Qui reprehenderit dolor impedit voluptates architecto corporis
+                                                    omnis odio culpa. Ex illum, placeat, consequatur, numquam voluptatem
+                                                    inventore expedita ipsa iure sed similique debitis.</div>
+                                                <div class="col-2"><img class="com-img"
+                                                        src="https://picsum.photos/50/50" alt=""></div>
+                                                <div class="col-10"><span class="font-weight-bold">Mark Otto :
+                                                    </span>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                    elit. Aspernatur, ab enim beatae inventore accusamus doloribus
+                                                    numquam aliquam rerum incidunt cum!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-0 border-top-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-2"><img class="imgimg" src="https://picsum.photos/50/50" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="font-weight-bold m-0">Jacon thornton </p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Dignissimos aliquid laboriosam quos tenetur iure labore natus
+                                            modi! Qui reprehenderit dolor impedit voluptates architecto corporis
+                                            omnis odio culpa. Ex illum, placeat, consequatur, numquam voluptatem
+                                            inventore expedita ipsa iure sed similique debitis.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-0 border-top-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <img class="imgimg" src="https://picsum.photos/50/50" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="font-weight-bold m-0">Mark Otto</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sunt
+                                                aspernatur perferendis doloremque culpa nihil iusto. Debitis dolor
+                                                consequuntur similique quod dignissimos sequi provident in, accusamus
+                                                ipsam molestiae architecto, voluptatibus tenetur ex magni iure quo
+                                                perspiciatis esse nostrum alias molestias sunt voluptate atque. Alias
+                                                eveniet aliquam voluptate laudantium commodi culpa?</p>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="pb-4">
+                                                        <img class="img-fluid" src="https://picsum.photos/650/650"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-2"><img class="com-img"
+                                                        src="https://picsum.photos/50/50" alt=""></div>
+                                                <div class="col-10"><span class="font-weight-bold">Mark Otto :
+                                                    </span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Dignissimos aliquid laboriosam quos tenetur iure labore natus
+                                                    modi! Qui reprehenderit dolor impedit voluptates architecto corporis
+                                                    omnis odio culpa. Ex illum, placeat, consequatur, numquam voluptatem
+                                                    inventore expedita ipsa iure sed similique debitis.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-100">
-                  <h5 class="card-title">Yann beta version 1.1 </h5>
-                  <img src="images/Yann.png" class="card-img-top img-thumbnail" alt="...">
-                  <div class="card-body">
+                <div class="col-12 col-md-12 col-lg-3">
                     <div class="row">
-                      <p>Prix : 101€</p>
-                      <div class="col-12">
-                        <p class="card-text mb-3"> Et oui vous ne revé pas ce Yann a l'option permis de conduire ! Il
-                          pourra
-                          vous conduire la ou vous le desirez !!
-                        </p>
-                      </div>
-                      <div class="col-12 ">
-                        <a href="#" class="btn btn-outline-info">Ajouter au Panier</a>
-                      </div>
+                        <div class="col-12 pb-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold">Sponsored</h5>
+                                    <img src="https://picsum.photos/150/150" class="card-img-top p-3" alt="...">
+                                    <p class="font-weight-bold m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-outline-info">Buy a ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>Likes <a class="view" href="#">. View All</a></h5>
+                                    <div class="row pb-4">
+                                        <div class="col-3 p-0"><img class="imgimg" src="https://picsum.photos/50/50" alt=""></div>
+                                        <div class="col-9">
+                                            <h5>Jacob Thrton <span class="text-secondary">@fat</span></h5>
+                                            <a href="#" class="btn btn-outline-info"><i class="fas fa-user-plus"></i> Follow</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 p-0"><img class="imgimg" src="https://picsum.photos/50/50" alt=""></div>
+                                        <div class="col-9">
+                                            <h5>Jacob Thrton <span class="text-secondary">@fat</span></h5>
+                                            <a href="#" class="btn btn-outline-info"><i class="fas fa-user-plus"></i> Follow</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                                        dignissimos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5 footer">
+                            <div class="card p-4">
+                                <p>&copy; 2019 Codincamp <a href="#">Lorem</a><a href="#">Lorem</a> <br><a
+                                        href="#">Lorem</a><a href="#">Lorem</a><a href="#">Lorem</a><a
+                                        href="#">Lorem</a><a href="#">Lorem</a><a href="#">Lorem</a><a
+                                        href="#">Lorem</a><a href="#">Lorem</a><a href="#">Lorem</a><a
+                                        href="#">Lorem</a></p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-100">
-                  <h5 class="card-title">Yann version 2.0</h5>
-                  <img src="images/Yann.png" class="card-img-top img-thumbnail" alt="...">
-                  <div class="card-body">
-                    <div class="row">
-                      <p>Prix : 9999.99€</p>
-                      <div class="col-12">
-                        <p class="card-text mb-3"> C'est le Yann ultime il peut absolument tout faire ! et parfaitement
-                          (les
-                          course, la vaisselle, la cuisine..) et j'en passe !
-                        </p>
-                      </div>
-                      <div class="col-12">
-                        <a href="#" class="btn btn-outline-info">Ajouter au Panier</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-
-
-        </section>
-      </div>
-      <div class="bg-info test"></div>
-    </main>
-
-    <footer class="bg-secondary text-white">
-      <div class="row no-gutters">
-        <div class="col-12 p-0">
-          <div class="bd-example text-center my-3">
-            <address>
-              <strong>YANNNNEEE Industrie</strong><br />
-              Rue des Yann <br />
-              MENDE 48000<br />
-              <abbr title="Phone">P:</abbr> (123) 456-7890
-            </address>
-
-            <address>
-              <strong>Email</strong><br />
-              <a class="text-white" href="yann-industrie@bossgosse.com">yann-industrie@bossgosse.com</a>
-            </address>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center bg-info text-white pt-3">
-        <p>Copyright<i class="far fa-copyright"></i> Aurore et Elian@CodinCamp4</p>
-      </div>
-    </footer>
-
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

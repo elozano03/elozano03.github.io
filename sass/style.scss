@@ -1,0 +1,131 @@
+@import 'base';
+@import 'colors';
+
+body{
+    font-family: $font-style ;
+    a {
+        color : #17a2b8;
+    }
+}
+
+/*  start navbar */
+.con-tainer {
+    width: 85%;
+    margin: auto;
+}
+.navbar-brand{
+    width: 10%;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.view {
+    font-size: .7rem;
+}
+
+nav{ 
+    background-color: $colors-primary;
+    margin-bottom: 2rem;
+    div{
+        ul{
+            li{
+                a{  
+                    color: rgb(219, 219, 219);
+                    padding : 0 1rem;
+                    &:hover {
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    }
+    form{
+        i{
+            color: $colors-white;
+        }
+    }
+}
+
+/* end navbar */
+
+/*  start first colum */
+.profil{
+    position: relative;
+}
+.user2{
+    position: absolute;
+    height: 25%;
+    border-radius: 100%;
+    top: 87%;
+    left: 37.5%;
+}
+
+.about{
+    h5{
+        a{
+            font-size: .7rem;
+            padding-left: .5rem;
+        }
+    }
+    ul{
+        li{
+            color : $colors-gray-light;
+            padding:.1rem 0;
+            i{
+                width: 30px;
+                
+            }
+        }
+    }
+}
+.profil-img{
+    h5{
+        a{
+            font-size: .7rem;
+            padding-left: .5rem;
+        }
+    }
+    div {
+        div{
+            div{
+                div {
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+}
+/* end first colum */
+// second colum
+.com-img {
+    border-radius: 100%;
+    width: 70%;
+}
+.imgimg{
+    width: 80%;
+    border-radius: 50%;
+}
+.main-page {
+    div {
+        div {
+            div {
+                div {
+                    padding: .5rem;
+                }
+                .i {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.footer {
+    div {
+        a {
+            padding-left: 0.5rem;
+        }
+    }
+}
